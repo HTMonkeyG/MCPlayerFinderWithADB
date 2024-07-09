@@ -1,0 +1,24 @@
+{
+  "name": "mcpf-adb",
+  "version": "1.0.0",
+  "description": "一个辅助网易版租赁服使用/w指令查找玩家大致位置的小工具",
+  "main": "main.js",
+  "dependencies": {
+    "@htmonkeyg/tformat": "^1.0.0"
+  },
+  "author": "HTMonkeyG",
+  "license": "MIT",
+  "bin": "./main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg . --out-path=build/"
+  },
+  "pkg": {
+    "scripts": "build/**/*.js",
+    "targets": [
+      "node18"
+    ],
+    "assets": [],
+    "outputPath": "build"
+  }
+}
